@@ -39,11 +39,27 @@ const validateForm = () => {
   }
 };
 
+const storeFormData = () => {
+  const user = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    website: form.website.value,
+    passwordsMatch: form.password.value,
+  };
+  //Do something with user data;
+  console.log(user);
+};
+
 const processFormData = (e) => {
   e.preventDefault();
 
   //validate form
   validateForm();
+  //Submit data if only true
+  if (isValid && passwordsMatch) {
+    storeFormData();
+  }
 };
 
 //Event Listener

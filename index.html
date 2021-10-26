@@ -15,23 +15,24 @@
         <form id="form">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Full Name" required minlength="3" maxlength="100">
+                <input type="text" id="name" placeholder="Full Name" name='name' required minlength="3" maxlength="100">
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="555-555-5555" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="tel" id="phone" placeholder="555-555-5555" name='phone' required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="email@address.com" required>
+                <input type="email" id="email" placeholder="email@address.com" name="email" required>
             </div>
             <div class="form-group">
                 <label for="website">Website URL</label>
-                <input type="url" id="website" placeholder="http://website name" required>
+                <input type="url" id="website" placeholder="http://website name" name="website" required>
             </div>
             <div class="form-group">
                 <label for="password1">Password</label>
-                <input type="password" id="password1" placeholder="Create Password" required
+                <input type="password" id="password1" placeholder="Create Password" name="password" required
                     pattern='^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$'
                     title='Please include 1 uppercase letter, 1 lowercase letter, and 1 number'>
             </div>
